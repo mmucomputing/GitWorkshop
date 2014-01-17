@@ -3,10 +3,12 @@
 $title-color: #04467e;
 
 h1 {
-    font-family: 'Oswald', sans-serif;
-    color: $title-color;
+  font-family: 'Oswald', sans-serif;
+  color: $title-color;
 }
 
-ul li {
-  display: block;
+ul {
+  li {
+    display: block;
+  }
 }

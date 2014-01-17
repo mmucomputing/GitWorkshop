@@ -9,6 +9,6 @@
     %h1 Names of awesome people
 
     %ul
-      - @names.each do |person|
+      - @people.each do |person|
         %li
-          %img(alt="#{person.name}" src="#{Gravatar.new(person.email).image_url}")
+          %img(alt="#{person.name}" src="#{person.avatar}")
