@@ -1,0 +1,12 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald);
+
+$title-color: #04467e;
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: $title-color;
+}
+
+ul li {
+  display: block;
+}
