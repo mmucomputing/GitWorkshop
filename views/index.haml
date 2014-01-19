@@ -11,10 +11,11 @@
   %body
     %h1 Names of awesome people
 
-    %ul
-      - @people.each do |person|
-        %li
-          .person.clearfix
-            %img(alt="#{person.name}" src="#{person.avatar}")
-            .right
-              %p= "#{person.name}"
+    .list
+      %ul
+        - @people.each do |person|
+          %li
+            .person.clearfix
+              %img(alt="#{person.name}" src="#{person.avatar}")
+              .right
+                %p= "#{person.name}"

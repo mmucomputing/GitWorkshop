@@ -7,4 +7,8 @@ $(document).ready(function() {
 			$(el).addClass('animated bounceInDown').show();
 		}, 500 * i);
 	});
+
+	setInterval(function() {
+		$('.list').load("/ ul li");
+	}, 5000);
 });
