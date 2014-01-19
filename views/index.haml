@@ -2,7 +2,10 @@
 %html
   %head
     %link(rel="stylesheet" href="http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css")  
-    %link(rel="stylesheet" href="css/styles.css")  
+    %link(rel="stylesheet" href="css/styles.css")
+    %link(rel="stylesheet" href="/css/animate.min.css")
+    %script{:type => "text/javascript", src:"http://code.jquery.com/jquery-1.10.1.min.js"}
+    %script{:type => "text/javascript", src:"js/animations.js"}
     %title Awesome People
 
   %body
@@ -11,4 +14,7 @@
     %ul
       - @people.each do |person|
         %li
-          %img(alt="#{person.name}" src="#{person.avatar}")
+          .person.clearfix
+            %img(alt="#{person.name}" src="#{person.avatar}")
+            .right
+              %p= "#{person.name}"

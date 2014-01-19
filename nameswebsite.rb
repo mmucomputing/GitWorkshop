@@ -3,7 +3,7 @@ require 'compass'
 require 'sinatra'
 require 'haml'
 
-require_relative 'person'
+require_relative 'person.rb'
 
 configure do
   set :haml, {:format => :html5}
